@@ -1,4 +1,4 @@
-This project makes it easy to capture images from a webcam, send them to a Sagemaker Inference Endpoint, and view the results.
+  This project makes it easy to capture images from a webcam, send them to a Sagemaker Inference Endpoint, and view the results.
 
 The Sagemaker Endpoint inference is proxied via a lambda function and an API gateway.
 
