@@ -1,0 +1,14 @@
+{
+    "mydev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-webcamsagemakerinfer-mydev-220254-authRole",
+            "UnauthRoleArn": "arn:aws:iam::741040131740:role/amplify-webcamsagemakerinfer-mydev-220254-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::741040131740:role/amplify-webcamsagemakerinfer-mydev-220254-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-webcamsagemakerinfer-mydev-220254-deployment",
+            "UnauthRoleName": "amplify-webcamsagemakerinfer-mydev-220254-unauthRole",
+            "StackName": "amplify-webcamsagemakerinfer-mydev-220254",
+            "StackId": "arn:aws:cloudformation:us-east-1:741040131740:stack/amplify-webcamsagemakerinfer-mydev-220254/722e01b0-150c-11ea-a59b-127e9735111e"
+        }
+    }
+}

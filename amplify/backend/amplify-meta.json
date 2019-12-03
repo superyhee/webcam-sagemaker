@@ -1,0 +1,79 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-webcamsagemakerinfer-mydev-220254-authRole",
+			"UnauthRoleArn": "arn:aws:iam::741040131740:role/amplify-webcamsagemakerinfer-mydev-220254-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::741040131740:role/amplify-webcamsagemakerinfer-mydev-220254-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "amplify-webcamsagemakerinfer-mydev-220254-deployment",
+			"UnauthRoleName": "amplify-webcamsagemakerinfer-mydev-220254-unauthRole",
+			"StackName": "amplify-webcamsagemakerinfer-mydev-220254",
+			"StackId": "arn:aws:cloudformation:us-east-1:741040131740:stack/amplify-webcamsagemakerinfer-mydev-220254/722e01b0-150c-11ea-a59b-127e9735111e"
+		}
+	},
+	"function": {
+		"webcamsagemakerinfer418234ea": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"output": {
+				"Region": "us-east-1",
+				"Arn": "arn:aws:lambda:us-east-1:741040131740:function:webcamsagemakerinfer418234ea-mydev",
+				"Name": "webcamsagemakerinfer418234ea-mydev",
+				"LambdaExecutionRole": "webcamsagemakerinferLambdaRole62f82a89-mydev"
+			},
+			"lastPushTimeStamp": "2019-12-02T15:19:22.853Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-webcamsagemakerinfer-mydev-220254-deployment/amplify-cfn-templates/function/webcamsagemakerinfer418234ea-cloudformation-template.json",
+				"logicalId": "functionwebcamsagemakerinfer418234ea"
+			}
+		}
+	},
+	"api": {
+		"apif205613a": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "webcamsagemakerinfer418234ea",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			],
+			"output": {
+				"ApiName": "apif205613a",
+				"RootUrl": "https://rpg7vl0nr3.execute-api.us-east-1.amazonaws.com/mydev"
+			},
+			"lastPushTimeStamp": "2019-12-02T15:19:22.854Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-webcamsagemakerinfer-mydev-220254-deployment/amplify-cfn-templates/api/apif205613a-cloudformation-template.json",
+				"logicalId": "apiapif205613a"
+			}
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-webcamsagemakerinfer-mydev-220254-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2019-12-02T15:19:22.858Z",
+			"output": {
+				"CloudFrontSecureURL": "https://d3o8b46fmh9oo6.cloudfront.net",
+				"S3BucketSecureURL": "https://webcamsagemakerinfer-20191202225924-hostingbucket-mydev.s3.amazonaws.com",
+				"CloudFrontOriginAccessIdentity": "EHK6LF5DFBJIA",
+				"WebsiteURL": "http://webcamsagemakerinfer-20191202225924-hostingbucket-mydev.s3-website-us-east-1.amazonaws.com",
+				"CloudFrontDistributionID": "E1C5QHCGHWHY0V",
+				"Region": "us-east-1",
+				"HostingBucketName": "webcamsagemakerinfer-20191202225924-hostingbucket-mydev",
+				"CloudFrontDomainName": "d3o8b46fmh9oo6.cloudfront.net"
+			},
+			"lastPushDirHash": "4jMH5gDJCnlutWJJOnYpycHBnRw="
+		}
+	}
+}

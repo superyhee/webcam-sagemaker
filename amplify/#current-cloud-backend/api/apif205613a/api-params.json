@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/classify",
+            "lambdaFunction": "webcamsagemakerinfer418234ea",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "apif205613a",
+    "apiName": "apif205613a",
+    "functionArns": [
+        {
+            "lambdaFunction": "webcamsagemakerinfer418234ea"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-webcamsagemakerinfer-mydev-220254-authRole",
+        "unAuthRoleName": "amplify-webcamsagemakerinfer-mydev-220254-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "webcamsagemakerinfer418234ea",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
