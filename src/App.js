@@ -232,7 +232,7 @@ class App extends Component {
       <div>
       <Form>
         <Form.Group widths='equal'>
-          <Form.Input label='Sagemaker终端节点' placeholder='Sagemaker Endpoint Name' name='endpointName' onChange={this.handleChange} value={this.state.endpointName} />
+          <Form.Input label='终端节点' placeholder='Sagemaker Endpoint Name' name='endpointName' onChange={this.handleChange} value={this.state.endpointName} />
           <Form.Input label='Sagemaker终端节点区域' placeholder='Sagemaker Endpoint Region' name='endpointRegion' onChange={this.handleChange} value={this.state.endpointRegion} />
           <Form.Input label='分类标签' placeholder='space delimited list of labels' name='classLabels' onChange={this.handleChange} value={this.state.classLabels} />
         </Form.Group>
